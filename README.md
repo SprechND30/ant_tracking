@@ -1,14 +1,14 @@
-#Preprocessing Ant Datasets for CFNets
+# Preprocessing Ant Datasets for CFNets
 
 This preprocessing program takes CSV file(s) with frame and bounding box information and outputs an IMDB video MatLab structure. It works with multiple videos and their info or one individual video. 
 
-###Input
+### Input
 
 To prepare the dataset for preprocessing, the CSVs with the bounding box information must be in a directory called `bbox_info` and called `Ant_VIDNUM.csv`, where `VIDNUM` is the video number. For example, the first video's CSV should be called `bbox_info/Ant_0.csv`, and so on. The CSV for a particular video should contain rows representing individual frames and five columns: the four points on the bounding box for a particular frame and the name of the frame's file. In this case, as per the datasets already on the desktop, the files are assumed to be in `.jpg` format and have the frame number as the first part of its name. For example, the 512th frame in a video would be called `512.jpg`. 
 
-###Running
+### Running
 
-####Flags
+#### Flags
 
 The program has two flags that _must_ be set, and a few more that can be set. 
 
