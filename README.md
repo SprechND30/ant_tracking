@@ -39,14 +39,14 @@ IMDB =
 
 	struct with fields:
 		
-			id:										[1xNUM_VIDS int]
-			path:									{1xNUM_VIDS cell}
-			nframes:							[1xNUM_VIDS int]
-			n_valid_objects:			[1xNUM_VIDS int]
-			valid_trackids:				[MAX_NUM_OBJ×NUM_VIDS double]
+			id:				[1xNUM_VIDS int]
+			path:				{1xNUM_VIDS cell}
+			nframes:			[1xNUM_VIDS int]
+			n_valid_objects:		[1xNUM_VIDS int]
+			valid_trackids:			[MAX_NUM_OBJ×NUM_VIDS double]
 			valid_per_trackid:		{MAX_NUM_OBJ×NUM_VIDS cell}
-			total_valid_objects:	[1x1 int]
-			objects:							{1xNUM_VIDS cell}
+			total_valid_objects:		[1x1 int]
+			objects:			{1xNUM_VIDS cell}
 ```
 
 - `id` is a row matrix that contains the IDs for the videos (0-NUM_VIDS).
